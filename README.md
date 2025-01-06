@@ -1,6 +1,8 @@
-# Celeste Classic on an ATmega3208
+# Celeste on an ATmega3208
 
-Small "weekend project" recreating about half of [Celeste Classic](https://www.lexaloffle.com/bbs/?tid=2145) on an ATmega3208 microcontroller and also adding Bluetooth multiplayer.
+Recreation of about half of Maddy Thorson and Noel Berry's [Celeste for PICO-8](https://www.lexaloffle.com/bbs/?tid=2145) on an ATmega3208 microcontroller. Also added Bluetooth multiplayer.
+
+![](./gameplay.png)
 
 ## Hardware
 
@@ -24,3 +26,9 @@ I used:
  - [XC8](https://www.microchip.com/en-us/tools-resources/develop/mplab-xc-compilers) v2.50
 
 Open Celeste.X in MPLAB. Inside bluetooth.c are some hardcoded MAC addresses you may want to change.
+
+Use build configuration "Madeline" to upload the code to the board which will be the host, and the "Theo" configuration to the board which will be the client.
+
+## License
+
+The code portions are under the [GNU General Public License v3.0](LICENSE). Most sprites and levels portions are copied from the original Celeste which doesn't have a license specified. I also copied some glyphs from https://fontstruct.com/fontstructions/show/2205487/8x8-pixel-3.
